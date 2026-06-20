@@ -755,16 +755,56 @@
 
             .hero {
                 padding: 0 5%;
-                padding-top: 100px;
+                padding-top: 120px;
+                min-height: auto;
+                padding-bottom: 4rem;
+            }
+
+            .hero h1 {
+                font-size: clamp(2rem, 10vw, 3rem);
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+                padding: 0.875rem 1.5rem;
             }
 
             .stats {
                 grid-template-columns: repeat(2, 1fr);
-                padding: 3rem 5%;
+                gap: 1rem;
+                padding: 2rem 5%;
+            }
+
+            .stat-item {
+                padding: 1.25rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+
+            .stat-label {
+                font-size: 0.8rem;
             }
 
             section {
-                padding: 4rem 5%;
+                padding: 3rem 5%;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
             }
 
             .about-grid {
@@ -772,12 +812,105 @@
             }
 
             .about-visual {
-                height: 300px;
+                height: 250px;
+                margin-bottom: 2rem;
+            }
+
+            .about-text h3 {
+                font-size: 1.5rem;
+            }
+
+            .experience-card {
+                padding: 1.5rem;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .experience-title {
+                font-size: 1.2rem;
+            }
+
+            .experience-list li {
+                font-size: 0.9rem;
+            }
+
+            .skill-category {
+                padding: 1.5rem;
+            }
+
+            .edu-card {
+                padding: 1.5rem;
+            }
+
+            .cert-grid {
+                grid-template-columns: 1fr;
             }
 
             .footer-content {
                 flex-direction: column;
                 text-align: center;
+                gap: 1.5rem;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .orb {
+                opacity: 0.5;
+            }
+
+            .orb-1 {
+                width: 200px;
+                height: 200px;
+                top: 5%;
+                left: -10%;
+            }
+
+            .orb-2 {
+                width: 150px;
+                height: 150px;
+                top: 40%;
+                right: -10%;
+            }
+
+            .orb-3 {
+                width: 125px;
+                height: 125px;
+                bottom: 10%;
+                left: -5%;
+            }
+
+            .cursor-glow {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.75rem;
+            }
+
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .stat-number {
+                font-size: 1.75rem;
+            }
+
+            .stat-label {
+                font-size: 0.75rem;
             }
         }
 
